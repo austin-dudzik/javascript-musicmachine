@@ -60,6 +60,22 @@ $(document).ready(function () {
         playRecording(recordedNotes);
     });
 
+    // Keys for song #1
+    songOne = ["B,3", "A,3", "G,3", "A,3", "B,3", "B,3", "B,3", "A,3", "A,3", "A,3", "B,3", "B,3", "B,3", "B,3", "A,3", "G,3", "A,3", "B,3", "B,3", "B,3", "B,3", "A,3", "A,3", "B,3", "A,3", "G,3"];
+
+    // Play song #1
+    $("#songOneButton").click(function () {
+        playRecording(songOne);
+    });
+
+    // Keys for song #2
+    songTwo = ["C,3", "E,3", "G,3", "B,3", "D,4", "F,4", "A,4", "C,5", "E,5", "G,5", "B,5", "G,5", "E,5", "C,5", "A,4", "F,4", "D,4", "B,3", "G,3", "E,3", "C,3"];
+
+    // Play song #2
+    $("#songTwoButton").click(function () {
+        playRecording(songTwo);
+    });
+
     // Assign functions to the other buttons
     $("#recordButton").click(toggleRecording);
     $("#clearButton").click(clearRecording);
